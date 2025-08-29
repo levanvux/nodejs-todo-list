@@ -5,5 +5,5 @@ My first backend project, raised with the patient guidance of the legendary YouT
 ## How to run
 
 ```bash
-$ npm install && npm run deptrai
+npm install && npm run deptrai
 ```
