@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title><%= title %></title>
+  </head>
+  <body>
+    <h1 id="logo">Todo List</h1>
+    <div id="todo-table">
+      <form>
+        <input type="text" name="item" placeholder="Add new item" required />
+        <button type="submit">Add Item</button>
+      </form>
+      <ul>
+        <% for( let index = 0; index < todos.length; index++ ) { %>
+        <li><%= todos[index].item %></li>
+        <% } %>
+      </ul>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.3/jquery.min.js"
+      integrity="sha512-mx0L9xs+R5jFQ6OoBbS9oOfdPyymQXsrSAjJ8rncuCxA9FPPrlrCxrr8Xwo+N246jOgHtIPBR0eF61OQuPSoDg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/js/todo-list.js"></script>
+  </body>
+</html>

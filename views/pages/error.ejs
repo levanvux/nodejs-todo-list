@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+    <title><%= title %></title>
+
+    <style>
+      .not-found-container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        color: #333;
+      }
+
+      .not-found-container h1 {
+        font-size: 8rem;
+        margin-bottom: 20px;
+        color: #ff4d4d;
+      }
+
+      .not-found-container h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+      }
+
+      .not-found-container p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .btn-home {
+        margin-top: 1rem;
+        display: inline-block;
+        width: 9rem;
+        padding: 1rem;
+        background-color: #ff4d4d;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+        align-self: center;
+      }
+
+      .btn-home:hover {
+        background-color: #e60000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="not-found-container">
+      <h1><%= statusCode %></h1>
+      <h2>Oops! <%= message %></h2>
+      <!-- <p>Sorry, the page you are looking for does not exist.</p> -->
+      <a href="/" class="btn-home">Go back Home</a>
+    </div>
+  </body>
+</html>
