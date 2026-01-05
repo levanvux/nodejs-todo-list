@@ -1,7 +1,17 @@
 <nav>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/todo">Todo List</a></li>
+    <li>
+      <a href="/" class="<%= currentPage === 'home' ? 'active' : '' %>">Home</a>
+    </li>
+    <li>
+      <a href="/about" class="<%= currentPage === 'about' ? 'active' : '' %>"
+        >About</a
+      >
+    </li>
+    <li>
+      <a href="/todo" class="<%= currentPage === 'todo' ? 'active' : '' %>"
+        >Todo List</a
+      >
+    </li>
   </ul>
 </nav>

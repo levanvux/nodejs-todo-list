@@ -52,7 +52,12 @@ const startServer = function () {
 
   // index route
   app.get("/", (req, res) => {
-    res.render("pages/home", { title: "Home Todo" });
+    res.render("pages/home", { title: "Home Todo", currentPage: "home" });
+  });
+
+  // about route
+  app.get("/about", (req, res) => {
+    res.render("pages/about", { title: "About Todo", currentPage: "about" });
   });
 
   // routes

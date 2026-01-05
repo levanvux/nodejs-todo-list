@@ -69,8 +69,11 @@ button {
   text-indent: -10000px;
 }
 
-#welcome {
+#home-container {
   text-align: center;
+}
+
+#welcome {
   margin: 20px auto;
   font-size: 5vw;
   text-transform: uppercase;
@@ -99,10 +102,38 @@ nav li a:hover {
   color: #333;
 }
 
+.active {
+  background-color: #eee;
+  color: #333;
+}
+
 @media (max-width: 600px) {
   nav ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
   }
+}
+
+#about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#about-images img {
+  max-width: 35%;
+  height: auto;
+}
+
+#about-images .soyjak {
+  max-width: 15%;
 }

@@ -5,8 +5,8 @@ const getTodos = (repo) => async (req, res) => {
     // }
     res.render("pages/todo", {
       title: "Todo List",
+      currentPage: "todo",
       todos: await repo.getAll(),
-      layout: false,
     });
   } catch (err) {
     res.status(500).render("pages/error", {
